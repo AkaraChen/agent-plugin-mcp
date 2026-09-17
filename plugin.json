@@ -1,0 +1,14 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "name": "agent-plugin-mcp",
+  "version": "1.0.0",
+  "description": "Call MCP servers from any agent through the mcporter CLI.",
+  "author": {
+    "name": "AkaraChen",
+    "url": "https://github.com/AkaraChen"
+  },
+  "homepage": "https://mcporter.sh",
+  "repository": "https://github.com/AkaraChen/agent-plugin-mcp",
+  "license": "MIT",
+  "keywords": ["mcp", "mcporter", "skills", "agent-plugins"]
+}
