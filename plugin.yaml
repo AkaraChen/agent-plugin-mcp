@@ -1,0 +1,11 @@
+name: mcporter
+version: 1.0.0
+manifest_version: 2
+license: MIT
+homepage: https://github.com/AkaraChen/agent-plugin-mcp
+author: AkaraChen
+description: "List and call MCP servers through the mcporter CLI."
+tags: [mcp, mcporter, cli, tools]
+provides_tools:
+  - mcp_list
+  - mcp_call
