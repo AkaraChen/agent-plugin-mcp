@@ -1,6 +1,5 @@
 name: mcporter
 version: 1.0.0
-manifest_version: 2
 license: MIT
 homepage: https://github.com/AkaraChen/agent-plugin-mcp
 author: AkaraChen
