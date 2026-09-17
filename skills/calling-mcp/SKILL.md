@@ -66,21 +66,6 @@ truth for what exists, ahead of any doc.
 4. Call the tool with `--args` and a JSON object, quoted so the shell keeps the braces.
 5. Add `--output json` when you intend to read values out of the result.
 
-## Worked example
-
-Resolve a library ID, then ask that same server for documentation:
-
-```bash
-mcporter call https://mcp.context7.com/mcp.resolve-library-id \
-  query="react hooks" libraryName=react --output json
-
-mcporter call https://mcp.context7.com/mcp.query-docs \
-  --args '{"libraryId": "/reactjs/react.dev", "query": "useEffect cleanup"}' --output json
-```
-
-For a server that is in your config rather than a URL, the same two calls read
-`mcporter call docs.resolve-library-id ...` and `mcporter call docs.query-docs ...`.
-
 ## Pitfalls
 
 - Server list is resolved from `./config/mcporter.json` first, then the home config. Run from the

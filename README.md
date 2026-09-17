@@ -20,9 +20,8 @@ agent-plugin-mcp/
 ## What the skill covers
 
 `calling-mcp` gives the agent the three commands it needs almost every time — list servers, read a
-server's tool signatures, call one tool — one worked example against a real public server, and the
-pitfalls that produce silent failures. Everything else is a `mcporter <subcommand> --help` away
-instead of being restated here.
+server's tool signatures, call one tool — plus the pitfalls that produce silent failures. Everything
+else is a `mcporter <subcommand> --help` away instead of being restated here.
 
 ## Requirements
 
