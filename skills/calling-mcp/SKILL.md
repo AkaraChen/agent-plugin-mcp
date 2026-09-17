@@ -20,10 +20,30 @@ almost every task; run `mcporter <subcommand> --help` for the rest.
   and you want the same tools here.
 - You need one call against a public MCP URL without editing any config.
 
-## Setup
+## Before you call
 
-Use `npx -y mcporter <subcommand>` if mcporter is not installed; install it with
-`npm install -g mcporter` or `brew install steipete/tap/mcporter`.
+Check the CLI is present and which version it is:
+
+```bash
+mcporter --version || echo "mcporter: not installed"
+```
+
+Nothing printed means it is not installed. Then either install it:
+
+```bash
+npm install -g mcporter                  # needs Node 24+
+brew install steipete/tap/mcporter       # macOS/Linux, no Node needed
+```
+
+or skip the install and let npx fetch it per command:
+
+```bash
+npx -y mcporter list
+```
+
+The command set moves between releases. Version 0.9.0 has no `serve` and no `resource`, though the
+website documents both. When a subcommand you expected is missing, check `mcporter --version`, then
+run `mcporter --help` and use what is actually in the build you have rather than what a doc claims.
 
 ## Commands
 
@@ -40,11 +60,12 @@ Use `npx -y mcporter <subcommand>` if mcporter is not installed; install it with
 
 ## Procedure
 
-1. `mcporter list` shows what is already configured. An empty list is normal on a fresh machine.
-2. Read the tool signatures before calling: `mcporter list <server> --schema`. Take argument names
+1. Confirm the CLI before anything else: `mcporter --version`. Install it if that prints nothing.
+2. `mcporter list` shows what is already configured. An empty list is normal on a fresh machine.
+3. Read the tool signatures before calling: `mcporter list <server> --schema`. Take argument names
    and required fields from those signatures instead of guessing.
-3. Call the tool with `--args` and a JSON object, quoted so the shell keeps the braces.
-4. Add `--output json` when you intend to read values out of the result.
+4. Call the tool with `--args` and a JSON object, quoted so the shell keeps the braces.
+5. Add `--output json` when you intend to read values out of the result.
 
 ## Worked example
 

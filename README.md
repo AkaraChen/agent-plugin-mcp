@@ -26,9 +26,13 @@ instead of being restated here.
 
 ## Requirements
 
-- `mcporter` on PATH (`npm install -g mcporter`, `brew install steipete/tap/mcporter`), or `npx`
-  available so `npx -y mcporter` works.
-- Node 24+ for npm installs.
+- `mcporter` on PATH, or `npx` available so `npx -y mcporter` works. The skill starts by checking
+  `mcporter --version` and gives the install lines if nothing prints:
+
+  ```bash
+  npm install -g mcporter                  # needs Node 24+
+  brew install steipete/tap/mcporter
+  ```
 
 ## Install
 
