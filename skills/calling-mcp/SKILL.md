@@ -41,9 +41,8 @@ or skip the install and let npx fetch it per command:
 npx -y mcporter list
 ```
 
-The command set moves between releases. Version 0.9.0 has no `serve` and no `resource`, though the
-website documents both. When a subcommand you expected is missing, check `mcporter --version`, then
-run `mcporter --help` and use what is actually in the build you have rather than what a doc claims.
+The command set moves between releases, so treat `--help` on the installed build as the source of
+truth for what exists, ahead of any doc.
 
 ## Commands
 
